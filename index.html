@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна №15</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Лабораторна робота №15</h1>
+
+<!-- ТАБИ -->
+<section class="tabs-container">
+    <div class="tabs-header">
+        <button class="tab-btn active" data-tab="desc">Опис</button>
+        <button class="tab-btn" data-tab="chars">Характеристики</button>
+        <button class="tab-btn" data-tab="reviews">Відгуки</button>
+    </div>
+
+    <div class="tabs-body">
+        <div id="desc" class="tab-content active">Це опис товару.</div>
+        <div id="chars" class="tab-content">Характеристики товару.</div>
+        <div id="reviews" class="tab-content">Відгуки користувачів.</div>
+    </div>
+</section>
+
+<!-- КНОПКА -->
+<button id="open-modal-btn">Зв'язатися з нами</button>
+
+<!-- МОДАЛКА -->
+<div class="modal-overlay" id="my-modal">
+    <div class="modal-window">
+        <span class="close-modal">&times;</span>
+        <h2>Залиште заявку</h2>
+        <form>
+            <input type="text" placeholder="Ваше ім'я"><br><br>
+            <input type="tel" placeholder="Ваш телефон"><br><br>
+            <button type="submit">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
